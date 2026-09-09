@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "comment": "The service worker and manifest must never be cached by the CDN. Everything else in dist/ has a content hash in its filename, so it can be cached forever — but sw.js keeps the same name while its contents change. Cache it, and browsers would keep running an old version of the app and never pick up a deploy.",
+      "source": "/(sw.js|manifest.webmanifest)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    }
+  ]
+}
