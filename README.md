@@ -10,10 +10,13 @@ your device.
 add it to your home screen.
 
 <p align="center">
-  <img src="illustrations/welcome.png" width="30%" alt="Welcome screen" />
-  <img src="illustrations/home.png" width="30%" alt="Notes grid" />
-  <img src="illustrations/editor.png" width="30%" alt="Note editor" />
+  <img src="screenshots/welcome.jpg" width="24%" alt="Welcome screen" />
+  <img src="screenshots/notes.jpg" width="24%" alt="Notes grid with search and pinning" />
+  <img src="screenshots/editor.jpg" width="24%" alt="Note editor with colour picker" />
+  <img src="screenshots/installed.jpg" width="24%" alt="Installed on the iOS home screen" />
 </p>
+
+<p align="center"><em>Running on iOS, installed to the home screen — no browser chrome.</em></p>
 
 ---
 
@@ -170,8 +173,20 @@ The architecture leaves room for them — persistence sits behind two functions
 in `lib/storage.ts`, so a networked backend would slot in there without the
 components noticing.
 
-## Credits
+## Design
 
-Designed in Canva, then rebuilt in React. The three screens above are the
-original design references; the app follows them closely, with the flowers
-redrawn as SVG so they stay crisp and work offline.
+The app was designed in Canva first, then rebuilt in React. Colours were
+sampled directly out of the original artwork rather than eyeballed, and the
+flowers were redrawn as SVG so they stay sharp at any size and need no network.
+
+<p align="center">
+  <img src="illustrations/welcome.png" width="30%" alt="Original welcome screen design" />
+  <img src="illustrations/home.png" width="30%" alt="Original notes grid design" />
+  <img src="illustrations/editor.png" width="30%" alt="Original editor design" />
+</p>
+
+<p align="center"><em>The original Canva references.</em></p>
+
+## Licence
+
+MIT — see [LICENSE](LICENSE).
