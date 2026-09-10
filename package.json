@@ -1,8 +1,13 @@
 {
-  "name": "daily-notes",
+  "name": "dear-mind",
   "private": true,
-  "version": "0.1.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "A cosy, offline-first mobile notes PWA. No backend, no accounts — your notes stay on your phone.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dubey-aditi/dear-mind.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
